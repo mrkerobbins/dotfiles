@@ -200,11 +200,11 @@ ${color}${memgraph}
 
 ${color0}Processes: ${color}${processes} ${color0}Threads: ${color}${running_threads}${color} ${color0}${alignr}CPU:${color} ${acpitemp}${color0}° C
 ${color0}Top Processes
-  ${color0}Name:                PID${alignr}CPU%
+  ${color0}Name:              PID: ${alignr}CPU%:
     ${color}${top name 1} ${top pid 1} ${alignr}${top cpu 1}
     ${color}${top name 2} ${top pid 2} ${alignr}${top cpu 2}
     ${color}${top name 3} ${top pid 3} ${alignr}${top cpu 3}
-  ${color0}Mem. Usage:${alignr}MEM%
+  ${color0}Name:              PID: ${alignr}RAM%:
     ${color}${top_mem name 1} ${top_mem pid 1} ${alignr}${top_mem mem 1}
     ${color}${top_mem name 2} ${top_mem pid 2} ${alignr}${top_mem mem 2}
     ${color}${top_mem name 3} ${top_mem pid 3} ${alignr}${top_mem mem 3}
@@ -223,9 +223,8 @@ ${color0}Network: ${color}${wireless_essid wlan0}${alignr}${color0}Connections: 
     ${scroll 40 ${tcp_portmon 32768 61000 rhost 2}} ${alignr}${tcp_portmon 32768 61000 rservice 2}
     ${scroll 40 ${tcp_portmon 32768 61000 rhost 3}} ${alignr}${tcp_portmon 32768 61000 rservice 3}
     ${scroll 40 ${tcp_portmon 32768 61000 rhost 4}} ${alignr}${tcp_portmon 32768 61000 rservice 4}
-${color0}Down:${alignr}${color}${downspeed wlan0} ${color0}per sec.
-${color}${downspeedgraph wlan0}
+
 ${color0}Up  :${alignr}${color}${upspeed wlan0} ${color0}per sec.
 ${color}${upspeedgraph wlan0}
-
-
+${color0}Down:${alignr}${color}${downspeed wlan0} ${color0}per sec.
+${color}${downspeedgraph wlan0}
